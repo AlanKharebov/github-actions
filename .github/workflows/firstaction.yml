@@ -13,25 +13,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env: 
-      name: Ray V3
+      name: Ray V4
     steps:
       - name: Run a one-line script
         run: |
           echo Hello $name!
           echo Actor: ${{ github.actor }}
           echo Commited By:: ${{ github.event.commits[0].author.name }}
-        
   dump:
     runs-on: ubuntu-latest
     steps:
       - env: 
           GITHUB_CONTEXT: ${{ toJosn(github) }}
         run: echo "$GITHUB_CONTEXT"
-      
-        
-      
-          G
-    
     
   pull_request_only:
     runs-on: ubuntu-latest
