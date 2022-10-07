@@ -20,10 +20,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env: 
-      name: Ray
+      name: Ray V
     steps:
       - name: Run a one-line script
-        run: echo Hello {Ray}!
+        run: echo Hello $name
         
   pul_request_only:
     runs-on: ubuntu-latest
@@ -33,4 +33,4 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
-          echo Hi {Raybo}.
+          echo Hi, $name .
