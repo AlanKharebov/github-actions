@@ -16,8 +16,23 @@ jobs:
       name: Ray V3
     steps:
       - name: Run a one-line script
-        run: echo Hello $name
+        run: |
+          echo Hello $name!
+          echo Actor: ${{ github.actor }}
+          echo Commited By:: ${{ github.event.commits[0].author.name }}
         
+  dump:
+    runs-on: ubuntu-latest
+    steps:
+      - env: 
+          GITHUB_CONTEXT: ${{ toJosn(github) }}
+        run: echo "$GITHUB_CONTEXT"
+      
+        
+      
+          G
+    
+    
   pull_request_only:
     runs-on: ubuntu-latest
     if: github.event_name == 'pull_request'
