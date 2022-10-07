@@ -20,7 +20,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env: 
-      name: Ray V2
+      name: Ray V3
     steps:
       - name: Run a one-line script
         run: echo Hello $name
