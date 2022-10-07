@@ -20,12 +20,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env: 
-      name: Ray V
+      name: Ray V2
     steps:
       - name: Run a one-line script
         run: echo Hello $name
         
-  pul_request_only:
+  pull_request_only:
     runs-on: ubuntu-latest
     if: github.event_name == 'pull_request'
     needs: build
