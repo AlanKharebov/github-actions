@@ -2,7 +2,7 @@ name: Hello Actions
 on:
   push:
     branches:
-      - mmain
+      - main
       - build
   pull_request:
     types: [closed]
