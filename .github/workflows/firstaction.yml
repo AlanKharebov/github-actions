@@ -14,10 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     env: 
       name: Ray V6
-      name2: XXX$name
     steps:
       - name: Run a one-line script
         run: |
+          name2: XXX$name
           echo Hello $name!
           echo Hello $name2!
           echo Actor: ${{ github.actor }}
