@@ -14,10 +14,12 @@ jobs:
     runs-on: ubuntu-latest
     env: 
       name: Ray V6
+      name2: XXX$name
     steps:
       - name: Run a one-line script
         run: |
           echo Hello $name!
+          echo Hello $name2!
           echo Actor: ${{ github.actor }}
           echo Commited By:: ${{ github.event.commits[0].author.name }}
   dump:
