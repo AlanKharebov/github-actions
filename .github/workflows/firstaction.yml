@@ -6,9 +6,9 @@ on:
       - build
   pull_request:
     types: [closed]
-
 env: 
- name: Raybo
+  name: Raybo
+  name2: XXX
 jobs:
   build:
     runs-on: ubuntu-latest
