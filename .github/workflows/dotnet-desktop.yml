@@ -2,17 +2,12 @@ name: .NET Core Desktop4
 
 on:
   push:
-
 jobs:
-
   build:
-
     runs-on: windows-latest  
-    
 
     steps:
-    #- name: Checkout    
-     # #uses: actions/checkout@v3
-    - name: Decode the pfx
+    - name: Step 1
       run: |
-        $pfx_cert_byte = "AAAA"
+        $var1 = "AAAA"
+        echo $var1
