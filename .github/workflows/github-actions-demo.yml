@@ -2,7 +2,7 @@ name: Hello
 on: [push]
 jobs:
   First-Job:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - run: echo "Hello Wordl!"
 
