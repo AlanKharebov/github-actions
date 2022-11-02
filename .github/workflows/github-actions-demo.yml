@@ -7,8 +7,4 @@ jobs:
     steps:
      - name: Step One
        run: |
-           echo "Hello Wordl-1!"
-           $envName = "abc"
-           echo "ABC = $envName"
-           echo "Hello Wordl-3!"
-   
+           echo "Hello Wordl-1!"   
