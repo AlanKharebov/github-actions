@@ -8,6 +8,7 @@ jobs:
      - name: 'Step One'
        run: |
          echo "Hello Wordl-1!"
+         var1 = "abc"
          echo "Hello Wordl-2!"
          echo "Hello Wordl-3!"
    
