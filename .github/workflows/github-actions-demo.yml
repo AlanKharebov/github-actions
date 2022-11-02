@@ -9,7 +9,7 @@ on: [push]
 
 jobs:
  spin_up:
-   runs-on: [self-hosted, master]
+   runs-on: ubuntu-latest
    steps:
    - name: Spin Up VM
      id: spin_up
