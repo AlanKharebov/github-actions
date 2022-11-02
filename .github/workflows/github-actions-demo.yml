@@ -2,16 +2,10 @@ name: Hello
 on: [push]
 jobs:
   First-Job:
-    name: "AAAA"
+    name: " First Job"
     runs-on: ubuntu-latest
     steps:
      - name: 'Step One'
        run: |
          echo "Hello Wordl!"
-         $var1 = "aaaa" 
-         echo $var1
-         $var2 = "bbbb" 
-         echo $var2
-         
-         
-
+   
