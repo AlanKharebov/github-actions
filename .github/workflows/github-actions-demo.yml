@@ -5,7 +5,8 @@ jobs:
     name: "AAAA"
     runs-on: ubuntu-latest
     steps:
-      - run: |
+     - name: 'Step One'
+       run: |
          echo "Hello Wordl!"
 
          $var1 = "aaaa" 
