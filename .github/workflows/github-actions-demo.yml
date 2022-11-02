@@ -8,10 +8,8 @@ jobs:
      - name: 'Step One'
        run: |
          echo "Hello Wordl!"
-
          $var1 = "aaaa" 
          echo $var1
-
          $var2 = "bbbb" 
          echo $var2
          
