@@ -7,6 +7,6 @@ jobs:
     steps:
       - run:
          echo "Hello Wordl!"
-         var1 = "dddd" 
+         $var1 = "dddd" 
          echo $var1
 
