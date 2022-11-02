@@ -1,9 +1,27 @@
 name: Hello
 on: [push]
+
+#jobs:
+#  First-Job:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - run: echo "Hello Wordl!"
+
 jobs:
-  First-Job:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Hello Wordl!"
-
-
+ spin_up:
+   runs-on: [self-hosted, master]
+   steps:
+   - name: Spin Up VM
+     id: spin_up
+     uses: jeff-vincent/orka-actions-spin-up@master
+     with:
+       orkaIP: http://10.221.188.100
+       orkaUser: ${{ secrets.ORKA_USER }}
+       orkaPass: ${{ secrets.ORKA_PASS }}
+       orkaBaseImage: gha_catalina_v2.img
+       githubUser: ${{ secrets.GH_USER }}
+       githubPat: ${{ secrets.GH_PAT }}
+       githubRepoName: bintrail-swift-sdk
+   outputs:
+     uniqueVMActionsTag: ${{ steps.spin_up.outputs.uniqueVMActionsTag }}
+     vmName: ${{ steps.spin_up.outputs.vmName }}
