@@ -10,5 +10,7 @@ jobs:
       - run: echo "A1
       - run: echo "A2"
       - run: echo "A3"
+      - name: "Do something"
+        run: ech "a4"
 
       
