@@ -7,9 +7,12 @@ jobs:
     steps:
       - run:
          echo "Hello Wordl!"
-         
-         $var1 = "dddd" 
+
+         $var1 = "aaaa" 
          echo $var1
+
+         $var2 = "bbbb" 
+         echo $var2
          
          
 
