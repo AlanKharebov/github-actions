@@ -3,9 +3,9 @@ on: [push]
 jobs:
   First-Job:
     name: " First Job"
-    runs-on: [self-hosted]
+    runs-on: [ubuntu-latest]
     steps:
-     - name: 'Step One'
+     - name: Step One
        run: |
            echo "Hello Wordl-1!"
            $envName = "abc"
