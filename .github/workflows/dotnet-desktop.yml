@@ -7,12 +7,8 @@ jobs:
     runs-on: windows-latest  
 
     steps:
-    - name: Step 1
-      run: |
-        $var1 = "AAAA"
-        echo $var1
-    - name: Step 2
-      run: |
-        $var2 = "BBB"
-        echo $var1
-        echo $var2
+      - run: echo "A1
+      - run: echo "A2"
+      - run: echo "A3"
+
+      
