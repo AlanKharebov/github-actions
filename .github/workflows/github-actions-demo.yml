@@ -7,4 +7,5 @@ jobs:
     steps:
      - name: Step One
        run: |
-           echo "Hello Wordl-1!"   
+           echo "Hello Wordl-1!"
+           $varOne = "abc"
