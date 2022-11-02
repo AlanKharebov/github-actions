@@ -3,7 +3,7 @@ on: [push]
 jobs:
   First-Job:
     name: " First Job"
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted]
     steps:
      - name: 'Step One'
        run: |
