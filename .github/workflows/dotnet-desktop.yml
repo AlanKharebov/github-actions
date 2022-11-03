@@ -11,6 +11,6 @@ jobs:
       - run: echo $var1
       - run: echo "A3"
       - name: "Do something"
-        run: echo "a4"
+        run: echo "a4aaa" 
 
       
